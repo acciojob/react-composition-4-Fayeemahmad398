@@ -1,13 +1,13 @@
-
 import React from "react";
-import './../styles/App.css';
-
+import "./../styles/App.css";
+import MyForm from "./MyForm";
 const App = () => {
-  return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
-}
+  const arr = [
+    { name: "Name", type: "text" },
+    { name: "email", type: "email" },
+    { name: "password", type: "password" },
+  ];
+  return <MyForm arr={arr} />;
+};
 
-export default App
+export default App;
